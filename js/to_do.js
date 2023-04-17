@@ -23,7 +23,7 @@ function addTodo(){
         spanDOM.innerHTML = "\u00d7"
         liDOM.appendChild(spanDOM)
 
-        console.log(typeof(inputDOM.value.length))
+        
         
 
     }
