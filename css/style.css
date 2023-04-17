@@ -76,6 +76,7 @@ html ,body {
     padding-top: 20px;
     border-radius: 10px 10px 10px 10px;
     position: relative;
+    
 }
 
 #input_div {
@@ -211,3 +212,174 @@ ul li:hover{
     transition-duration: 0.1s;
 }
 
+
+/* General Styles */
+
+
+
+/* Media Query for Small Screens */
+
+@media only screen and (max-width: 1000px) {
+
+   html, body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "f1";
+}
+
+#main {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#head {
+  display: flex;
+  color: rgb(23, 23, 23);
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 900;
+  background: #abdbe3;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+  width: 100%;
+}
+
+#input_div {
+  display: flex;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  margin-top: 45px;
+  width: 90%;
+  max-width: 700px;
+}
+
+#input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  padding: 10px;
+  padding-left: 0px;
+  font-weight: 14px;
+  font-size: 14px;
+  font-family: "f1";
+  width: 100%;
+}
+
+#ekle {
+  border: none;
+  outline: none;
+  padding: 16px 30px;
+  background: #1e81b0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  font-family: "f1";
+}
+
+#ekle:hover {
+  background-color: #186588;
+  transition-duration: 0.4s;
+}
+
+#author {
+  font-size: 10px;
+  position: absolute;
+  font-weight: 300;
+  right: 4px;
+  bottom: 3px;
+}
+
+#list {
+margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+#ulist {
+  width: 100%;
+  
+}
+
+ul li {
+  list-style: none;
+  font-size: 14px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  border-radius: 10px;
+  transition-duration: 0.1s;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-image: url("circle.png");
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+  transition-duration: 0.1s;
+}
+
+ul li:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+ul li:nth-child(even) {
+  background: #ffffff;
+}
+
+ul li.checked {
+    color:#3a3a3a;
+    text-decoration: line-through;
+    border: none;
+    font-size: 14px;
+    background: rgb(127, 213, 135);
+    transition-duration: 0.1s;
+    
+}
+
+ul li.checked::before{
+ background-image: url("check.png");
+ transition-duration: 0.1s;
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 38px;
+    height: 38px;
+    font-size: 25px;
+    color: #555;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.1s;
+}
+}
